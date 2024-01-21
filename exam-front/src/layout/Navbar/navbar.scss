@@ -1,0 +1,23 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 380px;
+    align-items: center;
+    .menu {
+        display: flex;
+        flex-direction: row;
+        font-weight: 600;
+        font-size: 14px;
+        gap: 40px;
+        padding-right: 70px;
+        .menuitem {
+            color: black;
+            cursor: pointer;
+            transition: 300ms;
+            &:hover {
+                color: #f41068;
+            }
+        }
+    }
+}

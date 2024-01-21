@@ -1,0 +1,226 @@
+header {
+  background: #ec008c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fc6767,
+    #ec008c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fc6767,
+    #ec008c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  position: relative;
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 600px;
+    margin-right: 300px;
+    h1 {
+      font-size: 72px;
+    }
+    .button {
+      background-color: white;
+      color: black;
+      width: 200px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 20px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 300ms;
+      &:hover {
+        background-color: #ec008c;
+        color: white;
+      }
+    }
+    .sale {
+      padding: 10px 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 13px;
+      h1 {
+        font-size: 50px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+#categories {
+  padding: 100px 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  h1 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 14px;
+    color: #777777;
+  }
+  .images {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    .prod-left {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .prod-top {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+      }
+    }
+  }
+}
+
+#men {
+  background-image: url(https://preview.colorlib.com/theme/shop/img/men-bg.jpg.webp);
+  min-height: 70vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .background {
+    position: absolute;
+    background: #ec008c;
+    min-height: 70vh;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 0;
+  }
+  .container {
+    position: absolute;
+    padding: 50px 380px;
+    color: white;
+    text-align: center;
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 14px;
+    }
+    .products {
+      padding: 40px 0;
+      display: flex;
+      flex-direction: row;
+      text-align: start;
+      gap: 30px;
+      .product {
+        h5 {
+          font-size: 16px;
+        }
+        p {
+          font-size: 24px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+#women {
+  padding: 50px 380px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  h1 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+#related {
+  padding: 50px 380px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  h1 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .products {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    .product {
+        display: flex;
+        flex-direction: row;
+        padding-left: 20px;
+        align-items: center;
+        gap: 20px;
+        img {
+            cursor: pointer;
+        }
+        .text {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            p {
+                font-size: 14px;
+                cursor: pointer;
+            }
+            h6 {
+                font-size: 14px;
+            }
+        }
+    }
+  }
+}
+
+.basketbtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 24px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: 200ms;
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+.resnav {
+  padding: 10px 20px;
+  display: none;
+  i {
+    font-size: 30px;
+    border: 1px solid gray;
+    padding: 5px;
+  }
+}

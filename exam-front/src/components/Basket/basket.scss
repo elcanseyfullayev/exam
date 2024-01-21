@@ -1,0 +1,55 @@
+#basket {
+    background-color: black;
+    height: 0px;
+    overflow: hidden;
+    width: 400px;
+    position: fixed;
+    bottom: 96px;
+    right: 50px;
+    color: white;
+    transition: 200ms;
+    h1 {
+        padding-bottom: 10px;
+    }
+    .basketitems {
+        overflow-y: auto;
+        max-height: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .basketitem {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border: 1px solid white;
+            align-items: center;
+            img {
+                height: 80px;
+                width: 80px;
+                padding-left: 10px;
+            }
+            .about {
+                padding-left: 10px;
+            }
+            .count {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 5px;
+                padding-right: 5px;
+            }
+            .removebtn {
+                font-size: 20px;
+                background-color: red;
+                color: white;
+                border: none;
+                padding: 5px 10px;
+            }
+        }
+    }
+}
+
+.active {
+    padding: 20px;
+    height: 500px !important;
+}
